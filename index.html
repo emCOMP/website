@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr">
+
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1"/>
+    
+    <title>Rumoring Directed Research Group</title>
+
+    <style type="text/css">
+        #body {
+            max-width: 1200px;
+            margin: 0 auto 200px auto;
+            padding: 0px 10px;
+        }
+        #facebook-embed {
+            display: none;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 60px;
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            border-bottom: none ! important;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+            margin-bottom: 0px !important;
+        }
+        
+        #myCarousel {
+            height:500px;
+            overflow: hidden;
+        }
+/*        #myCarousel img {*/
+/*            height: 500px;*/
+/*        }*/
+        
+        .navbar-brand img {
+/*            height: 100%;*/
+/*            padding: 2px 0px 4px 2px;*/
+            display: inline-block !important;
+            float: none !important;
+            vertical-align: baseline;
+            height: .8em;
+
+        }
+        
+        #footer img {
+            max-width: 300px;
+            max-height: 80px;
+            display: block;
+            text-align: bottom;
+        }
+        #footer img.left {
+            float: left;
+        }
+        #footer img.center {
+            margin: auto;
+            /*margin: 15px auto;*/
+        }
+        #footer img.right {
+            float: right;
+        }
+        
+        #title a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .selected {
+            font-weight: bold;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function injectHTML() {
+            var content = location.hash.toLowerCase();
+            if(content == "")
+                content = "carousel";
+            else
+                content = content.substr(1);
+            console.log(content);
+            $("#content").load(content + ".html");
+            $(".selected").removeClass("selected");
+            $("#link_" + content).addClass("selected");
+        }
+
+        window.addEventListener("hashchange", injectHTML, false);
+        $(document).on("ready", injectHTML);
+    </script>
+
+</head>
+
+<body>
+
+    
+    
+<div id="body">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            
+            <div> <!-- Title with datalab & somelab logos-->
+                <img style="float: left; width: 160px" src="images/logos/datalab_logo.png">
+                <img style="float: right; width: 160px" src="images/logos/somelab_logo.png">
+                <h1 id="title" class="text-center">
+                    <a href="#">
+                        <img src="images/twitter_rumor_vector.png" width="200px" />
+                        Rumoring <div style="display:inline-block"><small>Directed Research Group</small></div>
+                    </a>
+                </h1>
+            </div>
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="link_carousel" class="navbar-brand" href=".">
+                    Rumoring DRG
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="link_about"><a href="#About">About</a></li>
+                    <li id="link_people"><a href="#People">People</a></li>
+                    <li id="link_projects"><a href="#Projects">Projects</a></li>
+                    <li id="link_publications"><a href="#Publications">Publications</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container" id="content">
+        Insert content here
+    </div>
+
+    <br />
+    
+    <div id="footer">
+        <img src="images/logos/hcde_logo.png" class="left"/>
+        <img src="images/logos/ischool_logo.png" class="right"/>
+        <img src="images/logos/uw_logo.png" class="center"/>
+    </div>
+<!--
+    <footer class="footer">
+        <div class="container">
+            iSchool Logo
+            HCDE Logo
+            UW Logo
+        </div>
+    </footer>
+-->
+</div>
+
+</body>
+</html>
