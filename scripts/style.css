@@ -1,0 +1,67 @@
+#body {
+    max-width: 1200px;
+    margin: 0 auto 200px auto;
+    padding: 0px 10px;
+}
+#facebook-embed {
+    display: none;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+nav {
+    border-bottom: none ! important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#myCarousel {
+    height:500px;
+    overflow: hidden;
+}
+/*        #myCarousel img {*/
+/*            height: 500px;*/
+/*        }*/
+
+.navbar-brand img {
+/*            height: 100%;*/
+/*            padding: 2px 0px 4px 2px;*/
+    display: inline-block !important;
+    float: none !important;
+    vertical-align: baseline;
+    height: .8em;
+
+}
+
+#footer img {
+    max-width: 300px;
+    max-height: 80px;
+    display: block;
+    text-align: bottom;
+}
+#footer img.left {
+    float: left;
+}
+#footer img.center {
+    margin: auto;
+    /*margin: 15px auto;*/
+}
+#footer img.right {
+    float: right;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
+}
+
+.selected {
+    font-weight: bold;
+}
