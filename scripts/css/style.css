@@ -40,21 +40,26 @@ nav {
 
 }
 
+#footer {
+    position: relative;
+}
+
 #footer img {
     max-width: 300px;
     max-height: 80px;
     display: block;
     text-align: bottom;
+    position: absolute;
 }
 #footer img.left {
-    float: left;
+    left: 0;
 }
 #footer img.center {
     margin: auto;
-    /*margin: 15px auto;*/
+    position: relative;
 }
 #footer img.right {
-    float: right;
+    right: 0;
 }
 
 #title a {
