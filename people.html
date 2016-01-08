@@ -7,34 +7,10 @@
         flex-wrap: wrap;
     }
     #People div .profile {
-/*        width:200px;*/
-        max-height:200px;
-        overflow: hidden;
-/*        display:inline-block;*/
+        height: 220px;
+/*        overflow: hidden;*/
         vertical-align: top;
         padding: 1em;
-        transition: max-height 1s;
-    }
-    #People div .profile:hover {
-        max-height: 800px;
-        transition: max-height 2s;
-    }
-    #People img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        max-height: 120px;
-        max-width: 120px;
-    }
-    #People .glyphicon {
-        margin-top: 3em;
-        float: right;
-        transition: opacity 1s;
-        opacity: 1;
-    }
-    #People div div:hover .glyphicon {
-        opacity: 0;
     }
     #People .affiliation {
         float: left;
@@ -46,6 +22,49 @@
     #People a.badge_holder:after {
         display: block;
         content: ''
+    }
+    
+    #People img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        max-height: 120px;
+        max-width: 120px;
+    }
+    
+    #People .bio_container {
+        position: absolute;
+    }
+    #People .bio {
+        background-color: white;
+        position: relative;
+        max-height: 40px;
+        transition: max-height 0.5s;
+        overflow: hidden;
+        padding: 5px 10px;
+/*        padding: 5px 10px 20px 10px;*/
+        z-index: 8;
+    }
+    #People .profile:hover .bio {
+        max-height: 800px;
+        transition: max-height 2s;
+        z-index: 10;
+    }
+    #People .bio hr {
+        margin: 10px auto;
+    }
+    #People .glyphicon-chevron-down {
+        transition: opacity 1s;
+        opacity: 1;
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        right: 0px;
+        z-index: 9;
+    }
+    #People .profile:hover .glyphicon {
+        opacity: 0;
     }
 </style>
 
@@ -72,6 +91,24 @@
 //            </div>
         
         Object.keys(data).map(function(key) {
+            if(key == 'Alumni') {
+                div.append('h3')
+                    .html(key)
+                
+                div.append('div')
+                    .attr('class', 'row')
+                    .append('div')
+                    .attr('class', 'col-xs-12')
+                    .append('ul')
+                    .selectAll('li')
+                    .data(data[key])
+                    .enter()
+                    .append('li')
+                    .html(function(d) { return d["Name"]; });
+                
+                return;
+            }
+            
             div.append('h3')
                 .html(key);
             
@@ -104,52 +141,18 @@
                 .attr('disabled', function(d) { return d["Website"] ? null : true; })
                 .text(function(d) { return d["Name"]; });
             
-            profiles.append('span')
-                .attr('class', 'glyphicon glyphicon-option-horizontal');
+            var bios = profiles.append('div')
+                .attr('class', 'bio_container');
             
-            profiles.append('p')
-                .html(function(d) { return d["Bio"]; });
+            bios.append('span')
+                .attr('class', 'glyphicon glyphicon-chevron-down'); // option-horizontal
             
+            bios.append('div')
+                .attr('class', 'bio')
+                .html(function(d) { return d["Bio"] + "<br /><hr>"; });
             
-            // Presuming we got this far, remove the warning that we didn't have them
+            // Presuming we got this far, remove the warning that we couldn't load the people
             div.select('.alert').remove();
         });
     });
 </script>
-
-    <h3>Alumni</h3>
-    <div class="row">
-        <div class="col-xs-12">
-            <ul>
-                <li>Haneen		Al-Hassani</li>
-                <li>Cynthia		Andrews</li>
-                <li>Fang-Ju		Chou</li>
-                <li>Camille		Cobb</li>
-                <li>Brendan		Davy</li>
-                <li>Yuwei	"Stella"	Ding</li>
-                <li>Yoanna		Dosouto</li>
-                <li>Kyle		Estlick</li>
-                <li>Anu		Garimella</li>
-                <li>Lisa		Hu</li>
-                <li>Y.	Linlin	Huang</li>
-                <li>Rafal		Kocienik</li>
-                <li>Chris		Lee</li>
-                <li>Terri		Lovins</li>
-                <li>Jim		Maddock</li>
-                <li>Amirah		Majid</li>
-                <li>Sindhuja		Narasimhan</li>
-                <li>Hai		Nguyen</li>
-                <li>Mania		Orand</li>
-                <li>Heather	T.	Pedersen</li>
-                <li>Daniel	E.	Sandoval</li>
-                <li>Kelley		Shanahan</li>
-                <li>Cassie		Sigua</li>
-                <li>Annie		Tao</li>
-                <li>Brenda		Weitzer</li>
-                <li>Alex		Wilmington</li>
-                <li>Fen		Xie</li>
-                <li>Kexiang		Xu</li>
-            </ul>
-        </div>
-    </div>
-</div>

@@ -55,15 +55,15 @@
 
 "Undergraduates": [{
     "Name": "Isabelle Edwards",
-    "Affiliation": ["Eng", "iSchool"],
+    "Affiliation": ["English", "iSchool"],
     "Image": "images/people/Isabelle.jpg",
     "Bio": "Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. ",
     "Groups": ["Coding", "Permutations"]
 },{
     "Name": "Madison Holbrook",
     "Affiliation": ["HCDE"],
-    "Image": "images/people/generic.jpg",
-    "Bio": "",
+    "Image": "images/people/madison_holbrook.jpg",
+    "Bio": "Madison explores the relationship between human’s psychological processes, how the presence of social media affects their information, communication, development and involvement, and its occurrence/ amplification across multiple media platforms. Her goal is to understand these interactions and utilize social media and technology in a way that can solve world problems in more efficient ways.",
     "Groups": ["Coding"]
 },{
     "Name": "Coulter L'Heureux",
@@ -74,8 +74,8 @@
 },{
     "Name": "Gina Lee",
     "Affiliation": ["HCDE", "iSchool"],
-    "Image": "images/people/generic.jpg",
-    "Bio": "",
+    "Image": "images/people/gina_lee.jpg",
+    "Bio": "Gina joined the rumoring DRG as a qualitative coder in Winter 2016. She is interested in how information, especially from social media, can be utilized to assist people in disasters and repairing infrastructure. Her goals are to connect people with information through technology and design.",
     "Groups": ["Coding"]
 },{
     "Name": "Andrew Newton",
@@ -115,9 +115,38 @@
     "Groups": ["Machine Learning"]
 },{
     "Name": "Zena",
-    "Affiliation": ["Eng", "HCDE"],
+    "Affiliation": ["English", "HCDE"],
     "Image": "images/people/generic.jpg",
     "Bio": "",
     "Groups": ["Coding"]
-}]
-}
+}],
+"Alumni": [
+    { "Name": "Haneen Al-Hassani" },
+    { "Name": "Cynthia Andrews" },
+    { "Name": "Fang-Ju Chou" },
+    { "Name": "Camille Cobb" },
+    { "Name": "Brendan Davy" },
+    { "Name": "Yuwei \"Stella\" Ding" },
+    { "Name": "Yoanna Dosouto" },
+    { "Name": "Kyle Estlick" },
+    { "Name": "Anu Garimella" },
+    { "Name": "Lisa Hu" },
+    { "Name": "Y. Linlin Huang" },
+    { "Name": "Rafal Kocienik" },
+    { "Name": "Chris Lee" },
+    { "Name": "Terri Lovins" },
+    { "Name": "Jim Maddock" },
+    { "Name": "Amirah Majid" },
+    { "Name": "Sindhuja Narasimhan" },
+    { "Name": "Hai Nguyen" },
+    { "Name": "Mania Orand" },
+    { "Name": "Heather T. Pedersen" },
+    { "Name": "Daniel E. Sandoval" },
+    { "Name": "Kelley Shanahan" },
+    { "Name": "Cassie Sigua" },
+    { "Name": "Annie Tao" },
+    { "Name": "Brenda Weitzer" },
+    { "Name": "Alex Wilmington" },
+    { "Name": "Fen Xie" },
+    { "Name": "Kexiang Xu" }
+]}
