@@ -60,6 +60,12 @@
     "Bio": "Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. ",
     "Groups": ["Coding", "Permutations"]
 },{
+    "Name": "Zena Getachew",
+    "Affiliation": ["English", "HCDE"],
+    "Image": "images/people/zena_getachew.png",
+    "Bio": "Zena is interested in the relationship between society and technology, and more specifically unpacking the ways in which social media trends inform and reflect social and cultural elements. She enjoys reading, writing, and exploring hole in the ground restaurants. She (mistakenly) attributes her frequent—if not relentless—misuse of idioms to her being the daughter of Ethiopian immigrants.",
+    "Groups": ["Coding"]
+},{
     "Name": "Madison Holbrook",
     "Affiliation": ["HCDE"],
     "Image": "images/people/madison_holbrook.jpg",
@@ -113,12 +119,6 @@
     "Image": "images/people/kaitlyn_zhou.jpg",
     "Bio": "Kaitlyn has been working with this DRG since spring of 2015. Currently, she is involved in projects involving uncertainty in tweets and permutations in rumors.",
     "Groups": ["Machine Learning"]
-},{
-    "Name": "Zena",
-    "Affiliation": ["English", "HCDE"],
-    "Image": "images/people/generic.jpg",
-    "Bio": "",
-    "Groups": ["Coding"]
 }],
 "Alumni": [
     { "Name": "Haneen Al-Hassani" },
