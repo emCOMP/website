@@ -1,0 +1,123 @@
+{
+"Principal Investigators": [{
+    "Name": "Kate Starbird",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/kate_starbird.png",
+    "Bio": "Kate combines computational methods and qualitiative methods to understand social phenomenon at scale. One major focus of her work examines the use of social media during crisis events, specifically looking at how the converging audience (aka, the \"crowd\") can contribute—and is already contributing—to crisis response efforts.",
+    "Website": "http://faculty.washington.edu/kstarbi/",
+    "Groups": ["Permutations", "Corrective Behavior"] 
+},{
+    "Name": "Emma Spiro",
+    "Affiliation": ["iSchool", "Soc"],
+    "Image": "images/people/emma_spiro.png",
+    "Bio": "Emma studies online communication and information-related behaviors in the context of emergencies and disaster events. Her work also explores the structure and dynamics of interpersonal and organizational networks in both online and offline environments.",
+    "Website": "http://faculty.washington.edu/espiro/",
+    "Groups": ["Permutations", "Corrective Behavior"]
+},{
+    "Name": "Robert Mason",
+    "Affiliation": ["iSchool"],
+    "Image": "images/people/bob_mason.jpg",
+    "Bio": "Robert's current research interests focus on the philosophy and ethics of technology management and the cultural aspects of knowledge management. His recent research examines the impact of social media on knowledge work and how organizations provide post-implementation support for enterprise systems. He is a founding member of the Social Media Lab @ UW (<a href=\"http://somelab.net\">somelab.net</a>) and is working with a team of students on information flows related to the Occupy movement."
+}],
+    
+"Graduate Students": [{
+    "Name": "Ahmer Arif",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/ahmer_arif.jpg",
+    "Bio": "Ahmer is interested in studying how sharing and consuming information around crisis events on social media affects people on an emotional level. Ahmer really digs spending time with his wife, playing board-games and being a total foodie.",
+    "Groups": ["Corrective Behavior"]
+},{
+    "Name": "Elodie Fichet",
+    "Affiliation": ["Comm"],
+    "Image": "images/people/elodie_fichet.png",
+    "Bio": "Elodie's research focuses on Crisis Communication and how the use of new technologies has affected crisis response from both the professional and public realms. She often takes a qualitative perspective on the lab's research streams. She has worked - and continues to work - on self-corrective behaviors on Twitter (in response to rumor propagation) as well as the impact of 'official accounts' on rumoring during crisis situations.",
+    "Groups": ["Corrective Behavior"]
+},{
+    "Name": "A. Conrad Nied",
+    "Affiliation": ["CSE"],
+    "Image": "images/people/conrad_nied.png",
+    "Website": "http://www.conradnied.com",
+    "Bio": "Conrad is most excited about bringing more tools for interacting with the crisis data and using natural language processing to understands patterns in the data. Conrad is generally interested in personalized user feedback in CMC. Out of school, he likes to bake cookies, dance, and play with his cat Simba.",
+    "Groups": ["Coding", "Machine Learning", "Infrastructure"]
+},{
+    "Name": "John Robinson",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/john_robinson.png",
+    "Bio": "John is interested in design considerations for emergency response technologies. He comes to his PhD studies with over 15 years of software development experience including the first internet-streaming consumer-electronics devices. John spends a lot of time thinking about information visualization, emergent intelligences, decision making, and virtual collaborations. In his spare time, he volunteers with various youth and outreach programs. He also enjoys films, games, and music. ",
+    "Groups": ["Machine Learning", "Infrastructure"]
+},{
+    "Name": "Li Zeng",
+    "Affiliation": ["iSchool"],
+    "Image": "images/people/li_zeng.jpg",
+    "Bio": "Li is interested in implementing data analytics to understand rumoring transmission behaviors and developing machine learning strategies to automatically identify rumors on social media. She is currently working on designing machine learning experiments to identify rumor-affirming tweets and rumor-denying tweets for the project.",
+    "Groups": ["Machine Learning"]
+}],
+
+"Undergraduates": [{
+    "Name": "Isabelle Edwards",
+    "Affiliation": ["Eng", "iSchool"],
+    "Image": "images/people/Isabelle.jpg",
+    "Bio": "Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. ",
+    "Groups": ["Coding", "Permutations"]
+},{
+    "Name": "Madison Holbrook",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/generic.jpg",
+    "Bio": "",
+    "Groups": ["Coding"]
+},{
+    "Name": "Coulter L'Heureux",
+    "Affiliation": ["iSchool"],
+    "Image": "images/people/coulter_lheureux.jpg",
+    "Bio": "Coulter joined in the Rumoring DRG in the summer of 2015.  He is currently developing a system that collects information about deleted tweets and is researching how these tweets relate to corrective behavior surrounding crisis events on Twitter.  In his spare time, Coulter enjoys golfing, video games, and spending time with friends and family.",
+    "Groups": ["Coding", "Machine Learning"]
+},{
+    "Name": "Gina Lee",
+    "Affiliation": ["HCDE", "iSchool"],
+    "Image": "images/people/generic.jpg",
+    "Bio": "",
+    "Groups": ["Coding"]
+},{
+    "Name": "Andrew Newton",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/andrew_newton.png",
+    "Bio": "Andrew intends on pursuing a degree in HCDE. Taking HCDE core classes, he’s eager to apply the knowledge that he’s learning each day to helping our systems to be more autonomous. Andrew enjoys gaming, but off the computer he can often be found sailing, running, and practicing archery.",
+    "Groups": ["Coding", "Infrastructure"]
+},{
+    "Name": "Paul Townsend",
+    "Affiliation": [""],
+    "Image": "images/people/generic.jpg",
+    "Bio": "",
+    "Groups": ["Coding", "Corrective Behavior"]
+},{
+    "Name": "Stephanie Stanek",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/stephanie_stanek.jpg",
+    "Bio": "Stephanie has been in the lab since Winter 2014. She really enjoys qualitatively coding tweets after we collect data from a crisis event on Twitter. She is also interested in corrective behavior on Twitter, such as how Tweeters choose to correct themselves after they discover they have shared false information during a crisis event.",
+    "Groups": ["Coding", "Corrective Behavior"]
+},{
+    "Name": "Madeleine Stewart",
+    "Affiliation": ["CSE", "HCDE"],
+    "Image": "images/people/madeleine_stewart.jpg",
+    "Bio": "Madeleine is interested in the development of narratives on social media, especially in the context of protests and social movements.  Besides her current project, she’s passionate about how technology and big data can be used for social good.  In her free time, Madeleine enjoys distance running and exploring Seattle.",
+    "Groups": ["Coding", "Infrastructure"]
+},{
+    "Name": "Logan Walls",
+    "Affiliation": ["iSchool"],
+    "Image": "images/people/logan_walls.jpg",
+    "Bio": "Logan is interested in quantitative methods for analyzing unstructured data, and the psychological/sociological implications of rumoring in the online space. He is currently working on a machine-learning based approach to scoping social-media data. Outside of school Logan gets excited about futurism, story-driven media, and philosophy.",
+    "Groups": ["Machine Learning"]
+},{
+    "Name": "Kaitlyn Zhou",
+    "Affiliation": ["CSE", "HCDE"],
+    "Image": "images/people/kaitlyn_zhou.jpg",
+    "Bio": "Kaitlyn has been working with this DRG since spring of 2015. Currently, she is involved in projects involving uncertainty in tweets and permutations in rumors.",
+    "Groups": ["Machine Learning"]
+},{
+    "Name": "Zena",
+    "Affiliation": ["Eng", "HCDE"],
+    "Image": "images/people/generic.jpg",
+    "Bio": "",
+    "Groups": ["Coding"]
+}]
+}

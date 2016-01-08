@@ -6,7 +6,6 @@
         align-items: stretch;
         flex-wrap: wrap;
     }
-    
     #People div .profile {
 /*        width:200px;*/
         max-height:200px;
@@ -16,12 +15,10 @@
         padding: 1em;
         transition: max-height 1s;
     }
-    
     #People div .profile:hover {
         max-height: 800px;
         transition: max-height 2s;
     }
-    
     #People img {
         display: block;
         margin-left: auto;
@@ -30,7 +27,6 @@
         max-height: 120px;
         max-width: 120px;
     }
-    
     #People .glyphicon {
         margin-top: 3em;
         float: right;
@@ -40,170 +36,87 @@
     #People div div:hover .glyphicon {
         opacity: 0;
     }
-    
     #People .affiliation {
         float: left;
         position: absolute;
     }
+    #People a:hover {
+        text-decoration: none;
+    }
+    #People a.badge_holder:after {
+        display: block;
+        content: ''
+    }
 </style>
 
 <div id="People">
-    <h3>Principal Investigators</h3>
-    <div class="row">
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">HCDE</span>
-            <img src="images/people/kate_starbird.png" alt="Kate Starbird">
-            <strong><a href="http://faculty.washington.edu/kstarbi/">Kate Starbird</a></strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Kate combines computational methods and qualitiative methods to understand social phenomenon at scale. One major focus of her work examines the use of social media during crisis events, specifically looking at how the converging audience (aka, the "crowd") can contribute—and is already contributing—to crisis response efforts.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">iSchool</span>
-            <img src="images/people/emma_spiro.png" alt="Emma Spiro">
-            <strong><a href="http://faculty.washington.edu/espiro/">Emma Spiro</a></strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Emma studies online communication and information-related behaviors in the context of emergencies and disaster events. Her work also explores the structure and dynamics of interpersonal and organizational networks in both online and offline environments. 
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">iSchool</span>
-            <img src="images/people/bob_mason.jpg" alt="Robert Mason">
-            <strong><a href="http://faculty.washington.edu/kstarbi/">Robert Mason</a></strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Robert's current research interests focus on the philosophy and ethics of technology management and the cultural aspects of knowledge management. His recent research examines the impact of social media on knowledge work and how organizations provide post-implementation support for enterprise systems. He is a founding member of the Social Media Lab @ UW (<a href="http://somelab.net">somelab.net</a>) and is working with a team of students on information flows related to the Occupy movement.
-            </p>
-        </div>
-    </div>
+</div>
+
+<script>
+    var div = d3.select("#People");
     
-    <h3>Graduate Students</h3>
-    <div class="row">
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">HCDE</span>
-            <img src="images/people/ahmer_arif.jpg" alt="Ahmer Arif">
-            <strong>Ahmer Arif</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Ahmer is interested in studying how sharing and consuming information around crisis events on social media affects people on an emotional level. Ahmer really digs spending time with his wife, playing board-games and being a total foodie.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">Comm</span>
-            <img src="images/people/elodie_fichet.png" alt="Elodie Fichet">
-            <strong>Elodie Fichet</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Elodie's research focuses on Crisis Communication and how the use of new technologies has affected crisis response from both the professional and public realms. She often takes a qualitative perspective on the lab's research streams. She has worked - and continues to work - on self-corrective behaviors on Twitter (in response to rumor propagation) as well as the impact of 'official accounts' on rumoring during crisis situations.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">CSE</span>
-            <img src="images/people/conrad_nied.png" alt="A. Conrad Nied">
-            <strong><a href="http://www.conradnied.com">A. Conrad Nied</a></strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Conrad is most excited about bringing more tools for interacting with the crisis data and using natural language processing to understands patterns in the data. Conrad is generally interested in personalized user feedback in CMC. Out of school, he likes to bake cookies, dance, and play with his cat Simba.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">HCDE</span>
-            <img src="images/people/john_robinson.png" alt="John Robinson">
-            <strong>John Robinson</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                 John is interested in design considerations for emergency response technologies. He comes to his PhD studies with over 15 years of software development experience including the first internet-streaming consumer-electronics devices. John spends a lot of time thinking about information visualization, emergent intelligences, decision making, and virtual collaborations. In his spare time, he volunteers with various youth and outreach programs. He also enjoys films, games, and music. 
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">iSchool</span>
-            <img src="images/people/li_zeng.jpg" alt="Li Zeng">
-            <strong>Li Zeng</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Li is interested in implementing data analytics to understand rumoring transmission behaviors and developing machine learning strategies to automatically identify rumors on social media. She is currently working on designing machine learning experiments to identify rumor-affirming tweets and rumor-denying tweets for the project.
-            </p>
-        </div>
-    </div>
+    div.append("div")
+        .attr('class', 'alert alert-warning')
+        .attr('role', 'alert')
+        .style('margin', '100px')
+        .text("People failed to load");
     
-    <h3>Undergraduates</h3>
-    <div class="row">
-        <div class="profile col-xs-6 col-sm-3">
-            <div class="affiliation">
-                <span class="badge">Eng</span><br/>
-                <span class="badge">iSchool</span>
-            </div>
-            <img src="images/people/Isabelle.jpg" alt="Isabelle Edwards">
-            <strong>Isabelle Edwards</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. 
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">iSchool</span>
-            <img src="images/people/coulter_lheureux.jpg" alt="Coulter L'Heueux">
-            <strong>Coulter L'Heureux</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Coulter joined in the Rumoring DRG in the summer of 2015.  He is currently developing a system that collects information about deleted tweets and is researching how these tweets relate to corrective behavior surrounding crisis events on Twitter.  In his spare time, Coulter enjoys golfing, video games, and spending time with friends and family.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <img src="images/people/andrew_newton.png" alt="Andrew Newton">
-            <strong>Andrew Newton</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Andrew intends on pursuing a degree in HCDE. Taking HCDE core classes, he’s eager to apply the knowledge that he’s learning each day to helping our systems to be more autonomous. Andrew enjoys gaming, but off the computer he can often be found sailing, running, and practicing archery.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">HCDE</span>
-            <img src="images/people/stephanie_stanek.jpg" alt="Stephanie Stanek">
-            <strong>Stephanie Stanek</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Stephanie has been in the lab since Winter 2014. She really enjoys qualitatively coding tweets after we collect data from a crisis event on Twitter. She is also interested in corrective behavior on Twitter, such as how Tweeters choose to correct themselves after they discover they have shared false information during a crisis event.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <div class="affiliation">
-                <span class="badge">CSE</span><br/>
-                <span class="badge">HCDE</span>
-            </div>
-            <img src="images/people/madeleine_stewart.jpg" alt="Madeleine Stewart">
-            <strong>Madeleine Stewart</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Madeleine is interested in the development of narratives on social media, especially in the context of protests and social movements.  Besides her current project, she’s passionate about how technology and big data can be used for social good.  In her free time, Madeleine enjoys distance running and exploring Seattle.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <span class="badge affiliation">iSchool</span>
-            <img src="images/people/logan_walls.jpg" alt="Logan Walls">
-            <strong>Logan Walls</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Logan is interested in quantitative methods for analyzing unstructured data, and the psychological/sociological implications of rumoring in the online space. He is currently working on a machine-learning based approach to scoping social-media data. Outside of school Logan gets excited about futurism, story-driven media, and philosophy.
-            </p>
-        </div>
-        <div class="profile col-xs-6 col-sm-3">
-            <div class="affiliation">
-                <span class="badge">CSE</span> <br/>
-                <span class="badge">HCDE</span>
-            </div>
-            <img src="images/people/kaitlyn_zhou.jpg" alt="Kaitlyn Zhou">
-            <strong>Kaitlyn Zhou</strong>
-            <span class="glyphicon glyphicon-option-horizontal"></span>
-            <p>
-                Kaitlyn has been working with this DRG since spring of 2015. Currently, she is involved in projects involving uncertainty in tweets and permutations in rumors. 
-            </p>
-        </div>
-    </div> <!-- End Undergrads -->
-    
-    
+    d3.json("people.json", function(error, data) {
+        if (error) {
+            throw error;
+            return; // if that matters
+        }
+//            <div class="affiliation">
+//                <span class="badge">Eng</span><br/>
+//                <span class="badge">iSchool</span>
+//            </div>
+        
+        Object.keys(data).map(function(key) {
+            div.append('h3')
+                .html(key);
+            
+            var profiles = div.append('div')
+                .attr('class', 'row')
+                .selectAll('div.profile')
+                .data(data[key])
+                .enter()
+                .append('div')
+                .attr('class', 'profile col-xs-6 col-sm-3');
+            
+            var badges = profiles.append('div')
+                .attr('class', 'affiliation')
+                .selectAll('span.badge')
+                .data(function(d) { return d["Affiliation"]; })
+                .enter()
+                .append('a')
+                .attr('class', 'badge_holder')
+                .append('span')
+                .attr('class', 'badge')
+                .text(function(d) { return d; });
+            
+            profiles.append('img')
+                .attr('src', function(d) { return d["Image"]; })
+                .attr('alt', function(d) { return d["Name"];  });
+            
+            profiles.append('a')
+                .style('font-weight', 'bold')
+                .attr('href', function(d) { return d["Website"]; })
+                .attr('disabled', function(d) { return d["Website"] ? null : true; })
+                .text(function(d) { return d["Name"]; });
+            
+            profiles.append('span')
+                .attr('class', 'glyphicon glyphicon-option-horizontal');
+            
+            profiles.append('p')
+                .html(function(d) { return d["Bio"]; });
+            
+            
+            // Presuming we got this far, remove the warning that we didn't have them
+            div.select('.alert').remove();
+        });
+    });
+</script>
+
     <h3>Alumni</h3>
     <div class="row">
         <div class="col-xs-12">
