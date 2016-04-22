@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<style>
+    #Projects .row {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    #Projects div .profile {
+        height: 220px;
+/*        overflow: hidden;*/
+        vertical-align: top;
+        padding: 1em;
+    }
+    #Projects .affiliation {
+        float: left;
+        position: absolute;
+    }
+    #Projects a:hover {
+        text-decoration: none;
+    }
+    #Projects a.badge_holder:after {
+        display: block;
+        content: ''
+    }
+    
+    #Projects img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        max-height: 120px;
+        max-width: 120px;
+    }
+    
+    #Projects .bio_container {
+        position: absolute;
+    }
+    #Projects .bio {
+        background-color: white;
+        position: relative;
+        max-height: 40px;
+        transition: max-height 0.5s;
+        overflow: hidden;
+        padding: 5px 10px;
+/*        padding: 5px 10px 20px 10px;*/
+        z-index: 8;
+    }
+    #Projects .profile:hover .bio {
+        max-height: 800px;
+        transition: max-height 2s;
+        z-index: 10;
+    }
+    #Projects .bio hr {
+        margin: 10px auto;
+    }
+    #Projects .glyphicon-chevron-down {
+        transition: opacity 1s;
+        opacity: 1;
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        right: 0px;
+        z-index: 9;
+    }
+    #Projects .profile:hover .glyphicon {
+        opacity: 0;
+    }
+</style>
+
+<div id="Projects">
+</div>
+
+<script>
+    var div = d3.select("#Projects");
+    var projects = ["Coding", "Corrective Behavior", "Infrastructure", "Machine Learning", "Permutations"];
+    
+    div.append("div")
+        .attr('class', 'alert alert-warning')
+        .attr('role', 'alert')
+        .style('margin', '100px')
+        .text("Projects failed to load");
+    
+    d3.json("people.json", function(error, data) {
+        if (error) {
+            throw error;
+            return; // if that matters
+        }
+        
+        var row = div.append('div')
+            .attr('class', 'row');
+        
+        projects.map(function(project) {
+            console.log(project);
+            var project_div = row.append('div')
+                .attr('class', 'col-xs-6 col-sm-4');
+            
+            project_div.append('h3')
+                .html(project);
+            
+            var people = project_div.append('ul');
+            
+            Object.keys(data).map(function(key) {
+                data[key].map(function(person) {
+                    if(person["Groups"] && person["Groups"].indexOf(project) > -1) {
+                        people.append('li')
+                            .html(person["Name"])
+                    }
+
+//                    div.append('div')
+//                        .append('ul')
+//                        .selectAll('li')
+//                        .data(data[key])
+//                        .enter()
+//                        .append('li')
+//                        .html(function(d) { return d["Name"]; });
+
+                    return;
+                });
+
+                // Presuming we got this far, remove the warning that we couldn't load the people
+                div.select('.alert').remove();
+            });
+        });
+    });
+</script>

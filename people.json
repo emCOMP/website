@@ -40,11 +40,23 @@
     "Bio": "Conrad is most excited about bringing more tools for interacting with the crisis data and using natural language processing to understands patterns in the data. Conrad is generally interested in personalized user feedback in CMC. Out of school, he likes to bake cookies, dance, and play with his cat Simba.",
     "Groups": ["Coding", "Machine Learning", "Infrastructure"]
 },{
+    "Name": "Paul Townsend",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/paul_townsend.jpg",
+    "Bio": "Paul joined the team in late 2015 with an interest in the human experience of rumoring in social media.  In his current Master’s studies, he has a real passion for spotting and analyzing user needs and bringing clarity to design opportunities.  This has been true throughout his life, from an earlier career in mechanical engineering, to a brief venture custom designing woodwork, to current work defining and prioritizing business and UX enhancements in the wireless industry.",
+    "Groups": ["Corrective Behavior"]
+},{
     "Name": "John Robinson",
     "Affiliation": ["HCDE"],
     "Image": "images/people/john_robinson.png",
     "Bio": "John is interested in design considerations for emergency response technologies. He comes to his PhD studies with over 15 years of software development experience including the first internet-streaming consumer-electronics devices. John spends a lot of time thinking about information visualization, emergent intelligences, decision making, and virtual collaborations. In his spare time, he volunteers with various youth and outreach programs. He also enjoys films, games, and music. ",
-    "Groups": ["Machine Learning", "Infrastructure"]
+    "Groups": ["Machine Learning", "Infrastructure", "Corrective Behavior"]
+},{
+    "Name": "Tom Wilson",
+    "Affiliation": ["HCDE"],
+    "Image": "images/people/generic.jpg",
+    "Bio": "Tom is new grad student interested in the role of geography in rumoring behavior and more. ",
+    "Groups": ["Coding"]
 },{
     "Name": "Li Zeng",
     "Affiliation": ["iSchool"],
@@ -58,13 +70,13 @@
     "Affiliation": ["English", "iSchool"],
     "Image": "images/people/Isabelle.jpg",
     "Bio": "Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. ",
-    "Groups": ["Coding", "Permutations"]
+    "Groups": ["Coding", "Permutations", "Machine Learning"]
 },{
     "Name": "Zena Getachew",
     "Affiliation": ["English", "HCDE"],
     "Image": "images/people/zena_getachew.png",
     "Bio": "Zena is interested in the relationship between society and technology, and more specifically unpacking the ways in which social media trends inform and reflect social and cultural elements. She enjoys reading, writing, and exploring hole in the ground restaurants. She (mistakenly) attributes her frequent—if not relentless—misuse of idioms to her being the daughter of Ethiopian immigrants.",
-    "Groups": ["Coding"]
+    "Groups": ["Coding", "Corrective Behavior"]
 },{
     "Name": "Madison Holbrook",
     "Affiliation": ["HCDE"],
@@ -76,7 +88,7 @@
     "Affiliation": ["iSchool"],
     "Image": "images/people/coulter_lheureux.jpg",
     "Bio": "Coulter joined in the Rumoring DRG in the summer of 2015.  He is currently developing a system that collects information about deleted tweets and is researching how these tweets relate to corrective behavior surrounding crisis events on Twitter.  In his spare time, Coulter enjoys golfing, video games, and spending time with friends and family.",
-    "Groups": ["Coding", "Machine Learning"]
+    "Groups": ["Coding"]
 },{
     "Name": "Gina Lee",
     "Affiliation": ["HCDE", "iSchool"],
@@ -88,13 +100,7 @@
     "Affiliation": ["HCDE"],
     "Image": "images/people/andrew_newton.png",
     "Bio": "Andrew intends on pursuing a degree in HCDE. Taking HCDE core classes, he’s eager to apply the knowledge that he’s learning each day to helping our systems to be more autonomous. Andrew enjoys gaming, but off the computer he can often be found sailing, running, and practicing archery.",
-    "Groups": ["Coding", "Infrastructure"]
-},{
-    "Name": "Paul Townsend",
-    "Affiliation": [""],
-    "Image": "images/people/generic.jpg",
-    "Bio": "",
-    "Groups": ["Coding", "Corrective Behavior"]
+    "Groups": ["Infrastructure"]
 },{
     "Name": "Stephanie Stanek",
     "Affiliation": ["HCDE"],
@@ -106,19 +112,19 @@
     "Affiliation": ["CSE", "HCDE"],
     "Image": "images/people/madeleine_stewart.jpg",
     "Bio": "Madeleine is interested in the development of narratives on social media, especially in the context of protests and social movements.  Besides her current project, she’s passionate about how technology and big data can be used for social good.  In her free time, Madeleine enjoys distance running and exploring Seattle.",
-    "Groups": ["Coding", "Infrastructure"]
+    "Groups": ["Coding", "Machine Learning"]
 },{
     "Name": "Logan Walls",
     "Affiliation": ["iSchool"],
     "Image": "images/people/logan_walls.jpg",
     "Bio": "Logan is interested in quantitative methods for analyzing unstructured data, and the psychological/sociological implications of rumoring in the online space. He is currently working on a machine-learning based approach to scoping social-media data. Outside of school Logan gets excited about futurism, story-driven media, and philosophy.",
-    "Groups": ["Machine Learning"]
+    "Groups": ["Infrastructure", "Machine Learning"]
 },{
     "Name": "Kaitlyn Zhou",
     "Affiliation": ["CSE", "HCDE"],
     "Image": "images/people/kaitlyn_zhou.jpg",
     "Bio": "Kaitlyn has been working with this DRG since spring of 2015. Currently, she is involved in projects involving uncertainty in tweets and permutations in rumors.",
-    "Groups": ["Machine Learning"]
+    "Groups": ["Permutations"]
 }],
 "Alumni": [
     { "Name": "Haneen Al-Hassani" },
