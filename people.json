@@ -17,7 +17,7 @@
     "Name": "Robert Mason",
     "Affiliation": ["iSchool"],
     "Image": "images/people/bob_mason.jpg",
-    "Bio": "Robert's current research interests focus on the philosophy and ethics of technology management and the cultural aspects of knowledge management. His recent research examines the impact of social media on knowledge work and how organizations provide post-implementation support for enterprise systems. He is a founding member of the Social Media Lab @ UW (<a href=\"http://somelab.net\">somelab.net</a>) and is working with a team of students on information flows related to the Occupy movement."
+    "Bio": " Bob (emeritus professor as of July 2016) remains active in research and on PhD committees.  His current research focuses on the philosophy and ethics of technology management and the cultural impacts of information technology convergence with social processes. He is a founding member of the Social Media Lab at UW (<a href=\"http://somelab.ischool.uw.edu/\">http://somelab.ischool.uw.edu/</a>)."
 }],
     
 "Graduate Students": [{
@@ -72,8 +72,8 @@
     "Bio": "Isabelle is interested in a mixture of qualitative and quantitative analysis looking at the appearance of expressed uncertainty in times of crisis and how that might relate to rumoring behavior. Isabelle started working with this group in summer of 2015 and is an English and Informatics major interested in data science and media analysis. Outside of school Isabelle works as a Veterinary Assistant, writes short fiction and cuddles dogs whenever possible. ",
     "Groups": ["Coding", "Permutations", "Machine Learning"]
 },{
-    "Name": "Zena Getachew",
-    "Affiliation": ["English", "HCDE"],
+    "Name": "Zena Worku",
+    "Affiliation": ["CHID" /* Comparative History of Ideas */, "HCDE"],
     "Image": "images/people/zena_getachew.png",
     "Bio": "Zena is interested in the relationship between society and technology, and more specifically unpacking the ways in which social media trends inform and reflect social and cultural elements. She enjoys reading, writing, and exploring hole in the ground restaurants. She (mistakenly) attributes her frequent—if not relentless—misuse of idioms to her being the daughter of Ethiopian immigrants.",
     "Groups": ["Coding", "Corrective Behavior"]
